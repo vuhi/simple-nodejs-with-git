@@ -7,7 +7,8 @@ app.get('/', (req, res) => {
   // TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"`
   const result = axios.put(
     'http://169.254.169.254/latest/api/token',
-    { headers: { 'X-aws-ec2-metadata-token-ttl-seconds': 21600 }}
+      {},
+      { headers: { 'X-aws-ec2-metadata-token-ttl-seconds': 21600 }}
   )
   .then(result => res.json({ result }))
   .catch(error => res.json({ error }));
