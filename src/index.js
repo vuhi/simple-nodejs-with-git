@@ -5,7 +5,7 @@ const port = process.env.PORT || 8081;
 const aws = require('aws-sdk');
 
 
-app.get('/', async (req, res) => {
+app.get('/', (req, res) => {
   // const result = axios.get(
   //   // 'http://169.254.169.254/latest/api/token',
   //   //   'http://169.254.169.254/latest/meta-data/instance-id',
@@ -15,13 +15,18 @@ app.get('/', async (req, res) => {
   // .then(result => res.json({ result }))
   // .catch(error => res.json({ error }));
 
-  // new aws.MetadataService().request('/latest/meta-data/', (err, data) => {
-  //   res.json({ err, data });
-  // });
 
+  new aws.MetadataService().request('/latest/meta-data/', (err, data) => {
 
-  const result = await new aws.MetadataService().request('/latest/meta-data/');
-  res.json({ result });
+    if (err) {
+      res.json({ err });
+      return;
+    }
+
+    const metadata = data.split(/\r\r|\r|\n/);
+    res.json({ metadata });
+  });
+
 });
 
 const server = app.listen(port, () => {
