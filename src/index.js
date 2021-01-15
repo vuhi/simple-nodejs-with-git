@@ -6,30 +6,33 @@ const aws = require('aws-sdk');
 
 
 app.get('/', (req, res) => {
-  // const result = axios.get(
-  //   // 'http://169.254.169.254/latest/api/token',
-  //   //   'http://169.254.169.254/latest/meta-data/instance-id',
-  //     {},
-  //     { headers: { 'X-aws-ec2-metadata-token-ttl-seconds': 21600 }}
-  // )
-  // .then(result => res.json({ result }))
-  // .catch(error => res.json({ error }));
+  const metadataService = new aws.MetadataService();
 
-
-  new aws.MetadataService().request('/latest/meta-data', (err, data) => {
-
+  metadataService.request('/latest/meta-data/', (err, data) => {
     if (err) {
       res.json({ err });
       return;
     }
+    const metadata = data.split(/\r\r|\r|\n/);
+    const ec2Metadata = {};
 
-    const result = {};
-    // const metadata = data.split(/\r\r|\r|\n/);
-    // metadata.forEach(item => {
-    //
-    // })
-    res.json({ data });
+    metadata.forEach(item => {
+      metadataService.request(`/latest/meta-data/${item}`, (err, data) => {
+        if (err) {
+          res.json({ err });
+          return;
+        }
+        ec2Metadata[item] = data;
+      })
+    });
+
+    res.json({ ec2Metadata });
   });
+
+
+
+
+
 
 });
 
