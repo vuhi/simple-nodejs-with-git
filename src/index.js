@@ -16,15 +16,19 @@ app.get('/', (req, res) => {
   // .catch(error => res.json({ error }));
 
 
-  new aws.MetadataService().request('/latest/meta-data/', (err, data) => {
+  new aws.MetadataService().request('/latest/meta-data', (err, data) => {
 
     if (err) {
       res.json({ err });
       return;
     }
 
-    const metadata = data.split(/\r\r|\r|\n/);
-    res.json({ metadata });
+    const result = {};
+    // const metadata = data.split(/\r\r|\r|\n/);
+    // metadata.forEach(item => {
+    //
+    // })
+    res.json({ data });
   });
 
 });
