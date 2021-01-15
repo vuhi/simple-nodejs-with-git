@@ -6,7 +6,7 @@ const axios = require('axios');
 app.get('/', async (req, res) => {
   
   try {
-    const result = await axios.get('http://169.254.169.254/latest/meta-data');
+    const result = await axios.get('http://169.254.169.254/latest/meta-data/');
     res.json(result);
   } catch(e) {
     res.json(JSON.stringify(e));
