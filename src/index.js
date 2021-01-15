@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
   // .then(result => res.json({ result }))
   // .catch(error => res.json({ error }));
 
-  new aws.MetadataService().request('latest/meta-data/instance-id', (err, data) => {
+  new aws.MetadataService().request('/latest/meta-data/instance-id', (err, data) => {
     res.json({ err, data });
   })
 });
