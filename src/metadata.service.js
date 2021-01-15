@@ -2,14 +2,14 @@ const aws = require('aws-sdk');
 const metadataService = new aws.MetadataService();
 
 const getMetaDataItems = () => new Promise((resolve, reject) => {
-    resolve(['metadata', 'test']);
-    // metadataService.request('/latest/meta-data/', (err, data) => {
-    //     if (err) {
-    //         reject(err);
-    //     }
-    //     const metadata = data.split(/\r\r|\r|\n/);
-    //     resolve(metadata);
-    // });
+    // resolve(['metadata', 'test']);
+    metadataService.request('/latest/meta-data/', (err, data) => {
+        if (err) {
+            reject(err);
+        }
+        const metadata = data.split(/\r\r|\r|\n/);
+        resolve(metadata);
+    });
 });
 //
 // // const getMetaData = async (items) => {
