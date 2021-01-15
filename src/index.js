@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8081;
-const { getMetaDataItems, getMetaData } = require('metadata.service');
+const { getMetaDataItems, getMetaData } = require('./metadata.service');
 
 
 
@@ -9,7 +9,7 @@ app.get('/', async (req, res) => {
   try {
     const items = await getMetaDataItems();
     const ec2Metadata = await getMetaData(items);
-    res.json({ ec2Metadata });
+    res.json({ items });
   } catch (error) {
     res.json({ error });
   }
