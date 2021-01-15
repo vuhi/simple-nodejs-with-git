@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8081;
-const { getMetaDataItems, getMetaData } = require('./metadata.service');
+const { getMetaDataItems } = require('./metadata.service');
 
 
 

@@ -12,24 +12,24 @@ const getMetaDataItems = () => new Promise((resolve, reject) => {
     });
 });
 
-const getMetaData = async (items) => {
-    const ec2Metadata = {};
+// const getMetaData = async (items) => {
+//     const ec2Metadata = {};
+//
+//     const promises = items.forEach(item => new Promise((resolve, reject) => {
+//         new aws.MetadataService.request(`/latest/meta-data/${item}`, (err, data) => {
+//             if (err) {
+//                 reject(err);
+//             }
+//             ec2Metadata[item] = data;
+//             resolve();
+//         })
+//     }));
+//
+//     await Promise.all(promises);
+//     return ec2Metadata;
+// };
 
-    const promises = items.forEach(item => new Promise((resolve, reject) => {
-        new aws.MetadataService.request(`/latest/meta-data/${item}`, (err, data) => {
-            if (err) {
-                reject(err);
-            }
-            ec2Metadata[item] = data;
-            resolve();
-        })
-    }));
-
-    await Promise.all(promises);
-    return ec2Metadata;
-};
-
-module.exports = { getMetaData, getMetaDataItems };
+module.exports = { getMetaDataItems };
 
 
 
