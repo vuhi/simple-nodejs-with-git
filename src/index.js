@@ -7,9 +7,9 @@ app.get('/', async (req, res) => {
   
   try {
     const result = await axios.get('http://169.254.169.254/latest/meta-data/');
-    res.json(result);
+    res.json({ result });
   } catch(e) {
-    res.json(JSON.stringify(e));
+    res.json({ err: JSON.stringify(e) });
   }
 });
 
