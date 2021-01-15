@@ -5,7 +5,7 @@ const port = process.env.PORT || 8081;
 const aws = require('aws-sdk');
 
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
   const metadataService = new aws.MetadataService();
 
   metadataService.request('/latest/meta-data/', (err, data) => {
