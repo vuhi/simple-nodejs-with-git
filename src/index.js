@@ -1,29 +1,21 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8081;
-const { getMetaDataItems } = require('./metadata.service');
+// const axios = require('axios');
 const aws = require('aws-sdk');
 
 
-app.get('/', async (req, res) => {
-  try {
-    // const items = await getMetaDataItems();
-    // const ec2Metadata = await getMetaData(items);
+app.get('/', (req, res) => {
+  const metadataService = new aws.MetadataService();
 
-
-    new aws.MetadataService.request('/latest/meta-data/', (err, data) => {
-      if (err) {
-        res.json({ err });
-      }
-
-      const metadata = data.split(/\r\r|\r|\n/);
-      res.json({ metadata });
-    });
-
-    // res.json({ items });
-  } catch (error) {
-    res.json({ error });
-  }
+  metadataService.request('/latest/meta-data/', (err, data) => {
+    if (err) {
+      res.json({ err });
+      return;
+    }
+    const metadata = data.split(/\r\r|\r|\n/);
+    res.json({ metadata });
+  });
 });
 
 const server = app.listen(port, () => {
