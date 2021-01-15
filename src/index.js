@@ -8,7 +8,7 @@ const { getMetaDataItems, getMetaData } = require('./metadata.service');
 app.get('/', async (req, res) => {
   try {
     const items = await getMetaDataItems();
-    const ec2Metadata = await getMetaData(items);
+    // const ec2Metadata = await getMetaData(items);
     res.json({ items });
   } catch (error) {
     res.json({ error });
