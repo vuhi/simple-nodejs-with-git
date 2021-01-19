@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a189d8dd-6e15-49fd-b859-b20b18371875" name="Default Changelist" comment="fix" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1n7hU9SkBYrADd4EKERMOowmWiB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a189d8dd-6e15-49fd-b859-b20b18371875" name="Default Changelist" comment="" />
+      <created>1610747052231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610747052231</updated>
+      <workItem from="1610747056753" duration="8360000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix request">
+      <created>1610747295475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610747295475</updated>
+    </task>
+    <task id="LOCAL-00002" summary="get instance id">
+      <created>1610748203147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610748203147</updated>
+    </task>
+    <task id="LOCAL-00003" summary="use aws sdk">
+      <created>1610749222168</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610749222168</updated>
+    </task>
+    <task id="LOCAL-00004" summary="forgot /">
+      <created>1610749323924</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610749323924</updated>
+    </task>
+    <task id="LOCAL-00005" summary="meta data only">
+      <created>1610749524068</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610749524068</updated>
+    </task>
+    <task id="LOCAL-00006" summary="try something out">
+      <created>1610750008249</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610750008249</updated>
+    </task>
+    <task id="LOCAL-00007" summary="split metadata string">
+      <created>1610750398811</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610750398811</updated>
+    </task>
+    <task id="LOCAL-00008" summary="try to get all meta-data">
+      <created>1610750886539</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610750886539</updated>
+    </task>
+    <task id="LOCAL-00009" summary="try to get all meta-data again">
+      <created>1610751570143</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610751570143</updated>
+    </task>
+    <task id="LOCAL-00010" summary="try to get all meta-data again">
+      <created>1610752585367</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610752585367</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix require()">
+      <created>1610752750162</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610752750162</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix require()">
+      <created>1610752864708</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610752864708</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix">
+      <created>1610753043979</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610753043979</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix">
+      <created>1610753326061</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610753326061</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix">
+      <created>1610753504970</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610753504970</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix">
+      <created>1610753589111</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610753589111</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix">
+      <created>1610754104659</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610754104659</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix">
+      <created>1610754235753</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610754235753</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix">
+      <created>1610754486762</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610754486762</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix request" />
+    <MESSAGE value="get instance id" />
+    <MESSAGE value="use aws sdk" />
+    <MESSAGE value="forgot /" />
+    <MESSAGE value="meta data only" />
+    <MESSAGE value="try something out" />
+    <MESSAGE value="split metadata string" />
+    <MESSAGE value="try to get all meta-data" />
+    <MESSAGE value="try to get all meta-data again" />
+    <MESSAGE value="fix require()" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1788" y="367" key="Vcs.Push.Dialog.v2" timestamp="1610754487769">
+      <screen x="-2560" y="1" width="2560" height="1400" />
+    </state>
+    <state x="-1788" y="367" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.1.2560.1400@-2560.1.2560.1400" timestamp="1610754487769" />
+  </component>
+</project>
