@@ -4,19 +4,16 @@ describe('[index.spec.js]', () => {
   describe('>> [GET] /', () => {
 
     var server;
-    beforeEach(function () {
-      server = require('../src/index');
-    });
+    beforeAll(() => {  server = require('../src/index'); });
+    afterAll(() => { server.close(); });
 
-    afterEach(function (done) {
-      server.close(done);
-    });
-
-    it(`it should return 200`, async () => {  
-      return request(server).get('/')
+    it(`it should return 200 & hello world`, async () => {  
+      await request(server).get('/')
         .expect('Content-Type', /json/)
         .expect(200)
-        .then((res) => expect(res.body).toEqual('hello world'));
+        .then((res) => expect(res.body).toEqual(
+          expect.objectContaining({ message: expect.stringContaining('health check')})
+        ));
     });
   });
 });

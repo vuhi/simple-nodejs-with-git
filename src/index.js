@@ -3,15 +3,18 @@ const app = express();
 const port = process.env.PORT || 8081;
 const { getMetaDataItems, getMetaData } = require('./metadata.service');
 
+app.get('/', (req, res) => {
+  res.json({ message: 'this is a successful health check message from simple-nodejs app'});
+});
 
-app.get('/', async (req, res) => {
-
+app.get('/metadata', async (req, res) => {
   try {
     const metadata = await getMetaDataItems();
     const ec2Metadata = await getMetaData(metadata);
     res.json({ metadata, ec2Metadata })
+
   } catch (error) {
-    res.json({ error })
+    res.status(400).json({ error })
   }
 });
 
