@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'this is a successful health check message from simple-nodejs app'});
 });
 
+app.get('/ping', (req, res) => {
+  res.json({ message: 'pong'});
+});
+
 app.get('/metadata', async (req, res) => {
   try {
     const metadata = await getMetaDataItems();
